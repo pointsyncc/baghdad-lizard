@@ -1,12 +1,14 @@
 import './App.css';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import logo from './logo.svg';
 
 function App() {
   const [count, setCount] = useState(0);
-
+  useEffect(() => {
+    console.log(count);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
